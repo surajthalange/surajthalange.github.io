@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What a Moodle theme costs you, measured | Suraj Thalange</title>
+<meta name="description" content="Four Moodle themes, one site, every theme at its defaults: the compiled stylesheet as the browser receives it. Boost 175 KB, Classic 176 KB, Atrium 199 KB, Moove 318 KB gzipped, with the method so you can take the numbers again.">
+<meta name="author" content="Suraj Thalange">
+<link rel="canonical" href="https://surajthalange.github.io/notes/what-a-moodle-theme-costs/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Suraj Thalange">
+<meta property="og:title" content="What a Moodle theme costs you, measured">
+<meta property="og:description" content="Four Moodle themes, one site, every theme at its defaults: the compiled stylesheet as the browser receives it. Boost 175 KB, Classic 176 KB, Atrium 199 KB, Moove 318 KB gzipped, with the method so you can take the numbers again.">
+<meta property="og:url" content="https://surajthalange.github.io/notes/what-a-moodle-theme-costs/">
+<meta property="og:image" content="https://surajthalange.github.io/assets/img/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What a Moodle theme costs you, measured, Suraj Thalange">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What a Moodle theme costs you, measured">
+<meta name="twitter:description" content="Four Moodle themes, one site, every theme at its defaults: the compiled stylesheet as the browser receives it. Boost 175 KB, Classic 176 KB, Atrium 199 KB, Moove 318 KB gzipped, with the method so you can take the numbers again.">
+<meta name="twitter:image" content="https://surajthalange.github.io/assets/img/og/home.png">
+<meta name="twitter:image:alt" content="What a Moodle theme costs you, measured, Suraj Thalange">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0F6E73">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0E1417">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>
+// Apply the remembered theme before first paint so there is no flash.
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') { document.documentElement.setAttribute('data-theme', t); }
+  } catch (e) {}
+}());
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://surajthalange.github.io/#person",
+   "name": "Suraj Thalange",
+   "jobTitle": "Technical project manager and Moodle developer",
+   "email": "mailto:surajthalange18@gmail.com",
+   "url": "https://surajthalange.github.io",
+   "image": "https://surajthalange.github.io/assets/img/suraj-480.jpg",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+   },
+   "knowsAbout": [
+    "Moodle",
+    "PHP",
+    "Learning management systems",
+    "PHPUnit",
+    "Behat",
+    "AWS"
+   ],
+   "sameAs": [
+    "https://github.com/surajthalange",
+    "https://www.linkedin.com/in/developersurajthalange"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://surajthalange.github.io/#website",
+   "url": "https://surajthalange.github.io",
+   "name": "Suraj Thalange",
+   "author": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "url": "https://surajthalange.github.io/notes/what-a-moodle-theme-costs/",
+   "name": "What a Moodle theme costs you, measured",
+   "description": "Four Moodle themes, one site, every theme at its defaults: the compiled stylesheet as the browser receives it. Boost 175 KB, Classic 176 KB, Atrium 199 KB, Moove 318 KB gzipped, with the method so you can take the numbers again.",
+   "isPartOf": {
+    "@id": "https://surajthalange.github.io/#website"
+   },
+   "about": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "What a Moodle theme costs you, measured",
+   "datePublished": "2026-10-08",
+   "author": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body class="">
+<script>document.documentElement.classList.remove("no-js");</script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="avatar avatar-sm" aria-hidden="true"><span class="avatar-initials">ST</span></span>
+      <span class="brand-text"><strong>Suraj Thalange</strong><span>Technical project manager and Moodle developer</span></span>
+    </a>
+    <span class="availability availability-header"><span class="dot" aria-hidden="true"></span>Taking on new projects now</span>
+    <div class="header-actions">
+      <button class="kbd-hint" type="button" data-palette-open aria-haspopup="dialog">Search <kbd>Ctrl</kbd><kbd>K</kbd></button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme" data-theme-toggle>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+<li><a href="/work/">Work</a></li>
+<li><a href="/delivery/">Delivery</a></li>
+<li><a href="/services/">Services</a></li>
+<li><a href="/notes/" class="is-active" aria-current="page">Notes</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-small" href="/contact/">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/notes/">Notes</a> / Measurement</p>
+    <h1>What a Moodle theme costs you, measured</h1>
+    <p class="lede">Every Moodle theme page says the theme is fast, clean and lightweight. None of them says how many kilobytes. I measured four on one site and wrote down how, so you can disagree with the method rather than the adjective.</p>
+    <p class="muted small">8 October 2026</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+
+    <h2>The numbers</h2>
+    <p>Moodle 5.2.2+, PHP 8.4, one site, every theme installed side by side and left at its defaults. The figure that matters is the gzipped one, because that is what crosses the wire.</p>
+
+    <div class="table-wrap"><table>
+      <tr><th>Theme</th><th>Raw</th><th>Gzipped</th><th>vs Boost</th></tr>
+      <tr><td>Boost (core)</td><td>1,077,523</td><td><strong>175,176</strong></td><td>&mdash;</td></tr>
+      <tr><td>Classic (core)</td><td>1,083,720</td><td><strong>176,114</strong></td><td>+0.5%</td></tr>
+      <tr><td>Atrium (mine)</td><td>1,223,940</td><td><strong>198,639</strong></td><td>+13.4%</td></tr>
+      <tr><td>Moove</td><td>2,032,734</td><td><strong>318,327</strong></td><td>+81.7%</td></tr>
+    </table></div>
+
+    <p>Two things stand out. Classic, which looks like a different theme, costs almost exactly what Boost costs: <strong>under a kilobyte more</strong>. Nearly all of what you see is Bootstrap and Moodle's own component CSS, and the theme layer on top is thin. And the spread between the lightest and the heaviest is about <strong>143 KB gzipped</strong>, which on a slow connection is noticeable and on a fast one is not.</p>
+
+    <h2>Why Classic costs nothing and Moove costs 143 KB</h2>
+    <p>A Moodle theme is usually a Boost child: it inherits the entire compiled stylesheet and appends its own. So the floor is whatever core emits, and the only variable is what the theme adds on top. Classic adds a little. Atrium adds about 23 KB for a sidebar, a card dashboard, a catalogue, an enrolment page, seven colour presets, a dark scheme and a print sheet. Moove adds about 143 KB.</p>
+    <p>That is not a criticism of Moove. It is the most installed free theme on the Marketplace by a wide margin, and it earns that. But it is worth knowing that choosing it costs you the better part of a megabyte uncompressed, and nobody tells you.</p>
+
+    <h2>The thing nobody measures: what gets fetched from elsewhere</h2>
+    <p>Page weight is the obvious question. The more interesting one is whether the browser is sent to another company's servers to render your site.</p>
+    <p>At default settings, none of these four fetch anything external. But Moove offers a site font setting, and choosing anything other than the default sends every page load to <code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>. That is a reasonable feature and it is off by default. It is also a data protection question the moment someone turns it on, and the setting does not say so.</p>
+    <p>This is the part I would check before picking any theme: not how big it is, but who else your learners' browsers are talking to.</p>
+
+    <h2>Take the numbers again</h2>
+    <p>Install the themes side by side, then fetch each compiled stylesheet at the current theme revision:</p>
+    <pre><code>for t in boost classic atrium moove; do
+  curl -s "http://yoursite/theme/styles.php/$t/&lt;themerev&gt;/all" -o /tmp/$t.css
+  echo "$t raw=$(wc -c &lt; /tmp/$t.css) gzip=$(gzip -c /tmp/$t.css | wc -c)"
+done</code></pre>
+    <p><code>themerev</code> comes from <code>php admin/cli/cfg.php --name=themerev</code>. One trap cost me a confusing half hour: <strong>purging Moodle's caches does not reliably rebuild the compiled stylesheet.</strong> Call <code>theme_reset_all_caches()</code> first, or you will measure the previous theme's CSS and believe a setting did nothing.</p>
+    <p>For external requests, grep the compiled CSS for <code>url(http</code> and the theme's own source for font hosts. Comment blocks are full of URLs that are never fetched, so match on what the browser would actually request, not on any URL in the file.</p>
+
+    <h2>What this does not tell you</h2>
+    <p>Nothing here is a claim about speed. I measured bytes, not render time, not paint, not interaction. Doing that honestly needs a quiet machine, a warm cache, many samples and every theme under identical load, and none of that happened. A stylesheet 23 KB larger than Boost is a fact about download size and nothing more.</p>
+    <p>It is also one site with one set of plugins. Yours will differ. That is why the method is here.</p>
+    <p class="muted small">Boost Union is missing from the table because it was not installed on the machine these came from, and a number I have not taken does not belong in a table.</p>
+
+    <div class="btn-row">
+      <a class="btn" href="/work/theme-atrium/">See the theme</a>
+      <a class="btn btn-secondary" href="/notes/">More notes</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p><strong>Suraj Thalange</strong>, Moodle developer. Pune, India (IST, UTC+5:30).</p>
+      <p><a href="mailto:surajthalange18@gmail.com">surajthalange18@gmail.com</a> · <a href="https://github.com/surajthalange" rel="me">GitHub</a> · <a href="https://www.linkedin.com/in/developersurajthalange" rel="me">LinkedIn</a></p>
+      <p class="availability"><span class="dot" aria-hidden="true"></span>Taking on new Moodle projects now</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <p class="footer-note">Moodle is a registered trademark of Moodle Pty Ltd. This site is not affiliated with Moodle Pty Ltd. Copyright 2026 Suraj Thalange.</p>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/palette.js" defer></script>
+</body>
+</html>
