@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>theme_atrium: a complete Boost child theme for Moodle 5.1+ | Suraj Thalange</title>
+<meta name="description" content="Atrium is a Boost child theme for Moodle 5.1 and 5.2: one-click quick start, a Ctrl+K palette that also runs commands, a generated accessibility statement, designed front page, catalogue, print that works and dark mode presets. 73 PHPUnit tests, 20 Behat scenarios, GitHub Actions CI.">
+<meta name="author" content="Suraj Thalange">
+<link rel="canonical" href="https://surajthalange.github.io/work/theme-atrium/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Suraj Thalange">
+<meta property="og:title" content="theme_atrium: a complete Boost child theme for Moodle 5.1+">
+<meta property="og:description" content="Atrium is a Boost child theme for Moodle 5.1 and 5.2: one-click quick start, a Ctrl+K palette that also runs commands, a generated accessibility statement, designed front page, catalogue, print that works and dark mode presets. 73 PHPUnit tests, 20 Behat scenarios, GitHub Actions CI.">
+<meta property="og:url" content="https://surajthalange.github.io/work/theme-atrium/">
+<meta property="og:image" content="https://surajthalange.github.io/assets/img/og/theme-atrium.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="theme_atrium: a complete Boost child theme for Moodle 5.1+, Suraj Thalange">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="theme_atrium: a complete Boost child theme for Moodle 5.1+">
+<meta name="twitter:description" content="Atrium is a Boost child theme for Moodle 5.1 and 5.2: one-click quick start, a Ctrl+K palette that also runs commands, a generated accessibility statement, designed front page, catalogue, print that works and dark mode presets. 73 PHPUnit tests, 20 Behat scenarios, GitHub Actions CI.">
+<meta name="twitter:image" content="https://surajthalange.github.io/assets/img/og/theme-atrium.png">
+<meta name="twitter:image:alt" content="theme_atrium: a complete Boost child theme for Moodle 5.1+, Suraj Thalange">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0F6E73">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0E1417">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>
+// Apply the remembered theme before first paint so there is no flash.
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') { document.documentElement.setAttribute('data-theme', t); }
+  } catch (e) {}
+}());
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://surajthalange.github.io/#person",
+   "name": "Suraj Thalange",
+   "jobTitle": "Technical project manager and Moodle developer",
+   "email": "mailto:surajthalange18@gmail.com",
+   "url": "https://surajthalange.github.io",
+   "image": "https://surajthalange.github.io/assets/img/suraj-480.jpg",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+   },
+   "knowsAbout": [
+    "Moodle",
+    "PHP",
+    "Learning management systems",
+    "PHPUnit",
+    "Behat",
+    "AWS"
+   ],
+   "sameAs": [
+    "https://github.com/surajthalange",
+    "https://www.linkedin.com/in/developersurajthalange"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://surajthalange.github.io/#website",
+   "url": "https://surajthalange.github.io",
+   "name": "Suraj Thalange",
+   "author": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "url": "https://surajthalange.github.io/work/theme-atrium/",
+   "name": "theme_atrium: a complete Boost child theme for Moodle 5.1+",
+   "description": "Atrium is a Boost child theme for Moodle 5.1 and 5.2: one-click quick start, a Ctrl+K palette that also runs commands, a generated accessibility statement, designed front page, catalogue, print that works and dark mode presets. 73 PHPUnit tests, 20 Behat scenarios, GitHub Actions CI.",
+   "isPartOf": {
+    "@id": "https://surajthalange.github.io/#website"
+   },
+   "about": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "theme_atrium",
+   "alternateName": "Atrium",
+   "description": "A complete Boost child theme for Moodle 5.1 and 5.2.",
+   "programmingLanguage": "PHP",
+   "runtimePlatform": "Moodle 5.1 to 5.2",
+   "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+   "author": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body class="">
+<script>document.documentElement.classList.remove("no-js");</script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="avatar avatar-sm" aria-hidden="true"><span class="avatar-initials">ST</span></span>
+      <span class="brand-text"><strong>Suraj Thalange</strong><span>Technical project manager and Moodle developer</span></span>
+    </a>
+    <span class="availability availability-header"><span class="dot" aria-hidden="true"></span>Taking on new projects now</span>
+    <div class="header-actions">
+      <button class="kbd-hint" type="button" data-palette-open aria-haspopup="dialog">Search <kbd>Ctrl</kbd><kbd>K</kbd></button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme" data-theme-toggle>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+<li><a href="/work/" class="is-active" aria-current="page">Work</a></li>
+<li><a href="/delivery/">Delivery</a></li>
+<li><a href="/services/">Services</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-small" href="/contact/">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+
+<section class="page-head">
+  <div class="wrap page-head-grid">
+    <div>
+      <p class="breadcrumb"><a href="/work/">Work</a> / Theme</p>
+      <h1>theme_atrium</h1>
+      <p class="lede">A complete Boost child theme for Moodle 5.1 and 5.2. Every page an administrator, teacher or learner sees is designed, every feature is a setting, and every feature has a test.</p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"><i></i><i></i><i></i><span>northbridge.learning</span></div>
+      <a href="/assets/img/atrium/frontpage.png"><img src="/assets/img/atrium/frontpage.png" alt="Atrium front page: hero with headline and two buttons, feature blocks, course showcase and stats strip, in Atrium Teal" width="480" height="468"></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap project-layout">
+    <div class="prose">
+      <h2>Why I built it</h2>
+      <p>Most Moodle sites either run stock Boost or buy a commercial theme that brings a page builder, external requests and a support dependency. Atrium is the third option: a theme that gives an administrator a designed site through Moodle's own settings pages, fetches nothing from outside the site by default, and is testable the way core is. I studied the feature lists of commercial themes to decide what a "whole theme" must cover, then designed and wrote Atrium's own implementation of each.</p>
+
+      <h2>What it does</h2>
+      <div class="table-wrap"><table>
+        <tr><th>Area</th><th>Feature</th></tr>
+        <tr><td>Setup</td><td>Quick start: one click makes a fresh site look finished (front page, footer, quick links, login page) using only what the site already knows about itself. Everything it writes is a normal setting</td></tr>
+        <tr><td>Navigation</td><td>Left sidebar that collapses to icons, and a Ctrl+K "search and go" palette that finds courses, activities in the current course, common pages and admin pages, respecting the user's permissions</td></tr>
+        <tr><td>Accessibility</td><td>Accessibility toolbar: text size, high contrast, reading font and reduced motion, stored as user preferences. Plus a published accessibility statement of the kind UK and EU public bodies must have, generated from the site’s live settings rather than asserted, so switching a feature off removes the claim that it exists</td></tr>
+        <tr><td>Commands</td><td>The same Ctrl+K box runs things as well as finding them: editing on, colour scheme, focus mode, any accessibility setting, purge caches, sign out. A command posts with a session key and is re-checked against the user’s own permissions at the moment it runs</td></tr>
+        <tr><td>Front page</td><td>Hero carousel with autoplay that pauses on hover and respects reduced motion, feature blocks, course showcase, stats strip, testimonials, about band and CTA band, each with its own on/off switch and content settings</td></tr>
+        <tr><td>Catalogue</td><td>Course catalogue with search, category and sort filters, grid or list view, course cards with teachers, enrolment count, progress and price badge</td></tr>
+        <tr><td>Enrolment</td><td>Designed enrolment page for guest, self and paid enrolment with instructor profiles</td></tr>
+        <tr><td>Course</td><td>Course banner with progress and resume button, focus mode that hides everything but the content</td></tr>
+        <tr><td>Dashboard</td><td>Card dashboard with greeting and progress tiles, announcement bar with per-user dismissal, quick links grid, designed profile page</td></tr>
+        <tr><td>Login</td><td>Centred, left-panel and right-panel layouts with custom text</td></tr>
+        <tr><td>Appearance</td><td>Seven colour presets with a brand colour override, dark mode with a per-user switch (light, dark or follow the device), configurable footer</td></tr>
+        <tr><td>Print</td><td>Pages print as content: navigation, drawers, controls and footer dropped, the dark scheme flattened to ink on white rather than solid black, sections collapsed on screen opened for paper, tables keeping their borders</td></tr>
+        <tr><td>Empty states</td><td>A dashboard with nothing on it says what to do next instead of showing four zeros, and says something different depending on whether the person may create a course, browse for one, or has enrolment arranged for them</td></tr>
+        <tr><td>Speed</td><td>Fonts are served by the site, so no page waits on an outside host. Hovering a link fetches that page early, within a budget, never for a link carrying a session key</td></tr>
+      </table></div>
+
+      <h2>Screenshots</h2>
+      <p class="muted small">Click any image to enlarge. Demo site content is invented. These are the Marketplace listing thumbnails (480 px wide); full-size captures at 1600 × 1000 are being reshot on the Northbridge Learning demo site.</p>
+      <div class="gallery">
+        <figure><a href="/assets/img/atrium/dashboard-light.png"><img src="/assets/img/atrium/dashboard-light.png" width="480" height="243" alt="Dashboard in light mode with sidebar navigation and course cards" loading="lazy"></a><figcaption>Dashboard, light mode</figcaption></figure>
+        <figure><a href="/assets/img/atrium/course-dark-collapsed.png"><img src="/assets/img/atrium/course-dark-collapsed.png" width="480" height="243" alt="Course page in dark mode with the sidebar collapsed" loading="lazy"></a><figcaption>Course page, dark mode, sidebar collapsed</figcaption></figure>
+        <figure><a href="/assets/img/atrium/search-and-go.png"><img src="/assets/img/atrium/search-and-go.png" width="480" height="243" alt="Ctrl+K command palette open with search results for courses and admin pages" loading="lazy"></a><figcaption>Ctrl+K command palette</figcaption></figure>
+        <figure><a href="/assets/img/atrium/accessibility-toolbar.png"><img src="/assets/img/atrium/accessibility-toolbar.png" width="480" height="205" alt="Accessibility toolbar with text size, contrast and motion controls" loading="lazy"></a><figcaption>Accessibility toolbar</figcaption></figure>
+        <figure><a href="/assets/img/atrium/catalogue.png"><img src="/assets/img/atrium/catalogue.png" width="480" height="299" alt="Course catalogue with filters and course cards in a grid" loading="lazy"></a><figcaption>Course catalogue</figcaption></figure>
+        <figure><a href="/assets/img/atrium/enrolment-page.png"><img src="/assets/img/atrium/enrolment-page.png" width="480" height="356" alt="Enrolment page with course summary, instructors and an enrol button" loading="lazy"></a><figcaption>Enrolment page</figcaption></figure>
+        <figure><a href="/assets/img/atrium/course-banner.png"><img src="/assets/img/atrium/course-banner.png" width="480" height="262" alt="Course banner with image, progress bar and resume button" loading="lazy"></a><figcaption>Course banner with progress and resume</figcaption></figure>
+        <figure><a href="/assets/img/atrium/profile.png"><img src="/assets/img/atrium/profile.png" width="480" height="356" alt="Designed user profile page" loading="lazy"></a><figcaption>Profile page</figcaption></figure>
+        <figure><a href="/assets/img/atrium/login-centred.png"><img src="/assets/img/atrium/login-centred.png" width="480" height="326" alt="Login page with the centred card layout" loading="lazy"></a><figcaption>Login, centred layout</figcaption></figure>
+      </div>
+
+      <h2>How it is built</h2>
+      <ul>
+        <li>Boost child theme. Layouts and templates are overridden only where the design needs it; an override register in the README lists every one, so upgrades can be checked against it.</li>
+        <li>Settings are typed models with their own unit tests, not raw <code>get_config</code> calls scattered through templates.</li>
+        <li>Per-user state (dismissed announcements, focus mode, grid or list view, accessibility choices) uses core user preferences and is rendered server side.</li>
+        <li>No page builder. Fonts are bundled, and the theme makes no request to any outside service unless Google Analytics 4 is switched on, in which case the setting says so and site administrators are excluded.</li>
+        <li>Mustache templates follow core's conventions: strings through <code>{{#str}}</code>, no inline scripts, ARIA via core helpers.</li>
+      </ul>
+
+      <h2>Quality</h2>
+      <ul class="badges">
+        <li><span class="badge"><span>PHPUnit</span><span>73 tests</span></span></li>
+        <li><span class="badge"><span>Behat</span><span>20 scenarios</span></span></li>
+        <li><span class="badge"><span>CI</span><span>8 jobs passing</span></span></li>
+        <li><span class="badge"><span>Moodle</span><span>5.1, 5.2</span></span></li>
+        <li><span class="badge"><span>PHP</span><span>8.2, 8.3, 8.4</span></span></li>
+        <li><span class="badge"><span>DB</span><span>PostgreSQL, MariaDB</span></span></li>
+      </ul>
+      <p>GitHub Actions runs the Moodle plugin CI suite on every push: phplint, phpcs with the Moodle standard, phpmd, phpcpd, PHPDoc checker, Mustache lint, Grunt build check, savepoints, PHPUnit and Behat, across a matrix of Moodle 5.1 and 5.2, PHP 8.2 to 8.4, and both databases. PHPUnit covers the settings models, catalogue and enrolment data, announcement hashing, quick links parsing and preference handling. Behat covers every page a user interacts with: front page sections, catalogue search and view toggle, enrolment for guest, self and fee, focus mode, announcement dismissal, quick links, profile and the login layouts.</p>
+
+      <h2>What it costs the page</h2>
+      <p>Measured on one site with every theme at its defaults, as the browser receives it: Atrium’s compiled stylesheet is <strong>199 KB gzipped</strong>, against core Boost’s 175 KB and Moove’s 318 KB. So about 23 KB more than stock Moodle for everything above, and roughly a third smaller than the most-installed free theme. Both bundled typefaces are served by the site, so nothing is fetched from another host. The method is published in the repository, and no claim is made about render speed, which was not measured.</p>
+
+      <h2>Status</h2>
+      <p>Version 1.3.0 is submitted to the Moodle Marketplace and is in the review queue (ticket MMR-347). The repository is public, the source and the CI history are open, and the ZIP on the submission is cut from the <span class="mono">v1.3.0</span> tag with all eight CI jobs green.</p>
+
+      <div class="btn-row">
+        <a class="btn" href="/contact/">Request a walkthrough</a>
+        <a class="btn btn-secondary" href="/work/">More work</a>
+      </div>
+    </div>
+
+    <aside class="project-aside">
+      <div class="facts">
+        <h3>At a glance</h3>
+        <dl>
+          <dt>Type</dt><dd>Theme (Boost child)</dd>
+          <dt>Version</dt><dd>1.3.0</dd>
+          <dt>Requires</dt><dd>Moodle 5.1 or later</dd>
+          <dt>Licence</dt><dd>GPL v3 or later</dd>
+          <dt>Brand</dt><dd>Atrium Teal <span class="mono">#0F6E73</span></dd>
+          <dt>Source</dt><dd><a href="https://github.com/surajthalange/moodle-theme_atrium">github.com/surajthalange/moodle-theme_atrium</a></dd>
+        </dl>
+      </div>
+      <div class="facts">
+        <h3>Stack</h3>
+        <ul>
+          <li>PHP 8.2 to 8.4</li>
+          <li>SCSS pre and post hooks, Bootstrap 5 tokens</li>
+          <li>Mustache templates, AMD JavaScript modules</li>
+          <li>PHPUnit, Behat, Moodle plugin CI</li>
+          <li>GitHub Actions matrix, 8 jobs</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p><strong>Suraj Thalange</strong>, Moodle developer. Pune, India (IST, UTC+5:30).</p>
+      <p><a href="mailto:surajthalange18@gmail.com">surajthalange18@gmail.com</a> · <a href="https://github.com/surajthalange" rel="me">GitHub</a> · <a href="https://www.linkedin.com/in/developersurajthalange" rel="me">LinkedIn</a></p>
+      <p class="availability"><span class="dot" aria-hidden="true"></span>Taking on new Moodle projects now</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <p class="footer-note">Moodle is a registered trademark of Moodle Pty Ltd. This site is not affiliated with Moodle Pty Ltd. Copyright 2026 Suraj Thalange.</p>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/palette.js" defer></script>
+</body>
+</html>

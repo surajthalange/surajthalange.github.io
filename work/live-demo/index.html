@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live demo: authoring in Moodle without a developer | Suraj Thalange</title>
+<meta name="description" content="A 30-minute walkthrough Suraj Thalange runs for prospects on a stock Moodle 5.2 site: H5P content bank, question bank types, Book, interactive video and Arabic right-to-left, all created by a teacher account with no custom code.">
+<meta name="author" content="Suraj Thalange">
+<link rel="canonical" href="https://surajthalange.github.io/work/live-demo/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Suraj Thalange">
+<meta property="og:title" content="Live demo: authoring in Moodle without a developer">
+<meta property="og:description" content="A 30-minute walkthrough Suraj Thalange runs for prospects on a stock Moodle 5.2 site: H5P content bank, question bank types, Book, interactive video and Arabic right-to-left, all created by a teacher account with no custom code.">
+<meta property="og:url" content="https://surajthalange.github.io/work/live-demo/">
+<meta property="og:image" content="https://surajthalange.github.io/assets/img/og/live-demo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live demo: authoring in Moodle without a developer, Suraj Thalange">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Live demo: authoring in Moodle without a developer">
+<meta name="twitter:description" content="A 30-minute walkthrough Suraj Thalange runs for prospects on a stock Moodle 5.2 site: H5P content bank, question bank types, Book, interactive video and Arabic right-to-left, all created by a teacher account with no custom code.">
+<meta name="twitter:image" content="https://surajthalange.github.io/assets/img/og/live-demo.png">
+<meta name="twitter:image:alt" content="Live demo: authoring in Moodle without a developer, Suraj Thalange">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0F6E73">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0E1417">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>
+// Apply the remembered theme before first paint so there is no flash.
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') { document.documentElement.setAttribute('data-theme', t); }
+  } catch (e) {}
+}());
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://surajthalange.github.io/#person",
+   "name": "Suraj Thalange",
+   "jobTitle": "Technical project manager and Moodle developer",
+   "email": "mailto:surajthalange18@gmail.com",
+   "url": "https://surajthalange.github.io",
+   "image": "https://surajthalange.github.io/assets/img/suraj-480.jpg",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+   },
+   "knowsAbout": [
+    "Moodle",
+    "PHP",
+    "Learning management systems",
+    "PHPUnit",
+    "Behat",
+    "AWS"
+   ],
+   "sameAs": [
+    "https://github.com/surajthalange",
+    "https://www.linkedin.com/in/developersurajthalange"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://surajthalange.github.io/#website",
+   "url": "https://surajthalange.github.io",
+   "name": "Suraj Thalange",
+   "author": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "url": "https://surajthalange.github.io/work/live-demo/",
+   "name": "Live demo: authoring in Moodle without a developer",
+   "description": "A 30-minute walkthrough Suraj Thalange runs for prospects on a stock Moodle 5.2 site: H5P content bank, question bank types, Book, interactive video and Arabic right-to-left, all created by a teacher account with no custom code.",
+   "isPartOf": {
+    "@id": "https://surajthalange.github.io/#website"
+   },
+   "about": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body class="">
+<script>document.documentElement.classList.remove("no-js");</script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="avatar avatar-sm" aria-hidden="true"><span class="avatar-initials">ST</span></span>
+      <span class="brand-text"><strong>Suraj Thalange</strong><span>Technical project manager and Moodle developer</span></span>
+    </a>
+    <span class="availability availability-header"><span class="dot" aria-hidden="true"></span>Taking on new projects now</span>
+    <div class="header-actions">
+      <button class="kbd-hint" type="button" data-palette-open aria-haspopup="dialog">Search <kbd>Ctrl</kbd><kbd>K</kbd></button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme" data-theme-toggle>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+<li><a href="/work/" class="is-active" aria-current="page">Work</a></li>
+<li><a href="/delivery/">Delivery</a></li>
+<li><a href="/services/">Services</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-small" href="/contact/">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+
+<section class="page-head">
+  <div class="wrap page-head-grid">
+    <div>
+      <p class="breadcrumb"><a href="/work/">Work</a> / Live demo</p>
+      <h1>Authoring in Moodle without a developer</h1>
+      <p class="lede">A 30-minute screen-share on my own Moodle 5.2 site, stock Boost theme, no plugins, no custom code. A teacher account builds the content live. If a teacher can do it, your content team can.</p>
+      <div class="btn-row">
+        <a class="btn" href="#try">Try the demo <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-secondary" href="#steps">What you will see</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-head reveal">
+        <span class="eyebrow">Who it is for</span>
+        <h2>The sentence this demo answers</h2>
+        <p>"I want to build these exercises from the admin portal only. I don't want to do development every time I have a new exercise."</p>
+      </div>
+      <div class="prose reveal">
+        <p>Organisations deciding whether Moodle fits, and stakeholders who have been told they will need a developer every time they want a new exercise. Everything shown is core Moodle. Nothing is deployed during the session, and the person building the content is a Teacher account, not an administrator.</p>
+        <p>The site is a fictional school, Northbridge Learning, with one textbook chapter built out: English reading and grammar, Unit 3, Weather and Seasons. All content is invented. It exists so you can see a finished unit and then watch one more exercise get added to it, live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="steps">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What you will see</span>
+      <h2>Seven things, in thirty minutes</h2>
+    </div>
+    <ol class="walkthrough">
+      <li class="reveal">
+        <div class="step-text"><span class="num"></span><h3>A finished unit, as a learner</h3><p>A textbook chapter laid out as the book is: reading, practice exercises, a graded check-up and a grammar reference, with completion ticks as the learner works through it.</p></div>
+        
+      </li>
+      <li class="reveal">
+        <div class="step-text"><span class="num"></span><h3>One exercise built live, as a teacher</h3><p>Content bank, Add, choose from 57 H5P exercise types, type two sentences with the blanks marked with asterisks, save, place it in the course. About three minutes from blank screen to a learner answering it.</p></div>
+        <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>Teacher view: H5P editor</span></div><a href="/assets/img/demo/h5p-editor-fill-blanks.png"><img src="/assets/img/demo/h5p-editor-fill-blanks.png" alt="Fill in the Blanks editor with the two 'Seasons' sentences typed in" width="1600" height="1000" loading="lazy" decoding="async"></a></div>
+      </li>
+      <li class="reveal">
+        <div class="step-text"><span class="num"></span><h3>The learner sees it immediately</h3><p>Refresh, answer, check. Nothing was published or deployed. The moment the teacher saved, the learner had it.</p></div>
+        <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>Student view</span></div><a href="/assets/img/demo/h5p-exercise-check.png"><img src="/assets/img/demo/h5p-exercise-check.png" alt="Exercise 3: Seasons answered, 'winter' typed, green tick after Check" width="1600" height="1000" loading="lazy" decoding="async"></a></div>
+      </li>
+      <li class="reveal">
+        <div class="step-text"><span class="num"></span><h3>Graded questions through the question bank</h3><p>Cloze passages with dropdowns, typed words and numbers; drag and drop onto an image; drag and drop into text; select missing words. Marks flow to the gradebook automatically.</p></div>
+        <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>Question preview</span></div><a href="/assets/img/demo/question-cloze-preview.png"><img src="/assets/img/demo/question-cloze-preview.png" alt="Cloze question 'Weather report' previewed: six gaps, 6.00 out of 6.00" width="1600" height="1000" loading="lazy" decoding="async"></a></div>
+      </li>
+      <li class="reveal">
+        <div class="step-text"><span class="num"></span><h3>Drag and drop onto a diagram</h3><p>The diagram is an image the author uploads; the drop zones are drawn on it in the question editor with the mouse. Cloze is the one type with a text syntax; the rest are form-driven.</p></div>
+        
+      </li>
+      <li class="reveal">
+        <div class="step-text"><span class="num"></span><h3>Book and interactive video</h3><p>Multi-chapter reading with a table of contents, edited in the browser. A YouTube link with questions on the timeline that pause the video until they are answered.</p></div>
+        
+      </li>
+      <li class="reveal">
+        <div class="step-text"><span class="num"></span><h3>Arabic and right-to-left</h3><p>The same site switched to Arabic with the layout mirrored, to show what localisation looks like before any translation work is commissioned.</p></div>
+        
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="try">
+  <div class="wrap">
+    <div class="feature">
+      <div class="reveal">
+        <span class="eyebrow">Try it</span>
+        <h2>Book a walkthrough, or ask for the guest link</h2>
+        <p class="muted">The demo runs on my machine and is rehearsed before every call: caches purged, pages warmed, a reset script that returns the course to its clean state, and a fallback for every live step so a misbehaving editor costs five seconds rather than the meeting. It is free, and you get a written summary afterwards of what was shown and what your case would still need built.</p>
+        <div class="btn-row">
+          <a class="btn" href="/contact/?kind=demo">Book a 30-minute walkthrough <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn-secondary" href="mailto:surajthalange18@gmail.com?subject=Guest%20access%20to%20the%20demo%20site">Ask for guest access</a>
+        </div>
+        <p class="small muted mt-2">Guest access gives you a student login on the demo site for a week so you can click through the unit yourself before or after the call.</p>
+      </div>
+      <div class="facts reveal">
+        <h3>At a glance</h3>
+        <dl>
+          <dt>Format</dt><dd>Screen-share, 30 minutes, free</dd>
+          <dt>Platform</dt><dd>Moodle 5.2, stock Boost, no plugins</dd>
+          <dt>Accounts</dt><dd>Teacher and student, not admin</dd>
+          <dt>Shown</dt><dd>H5P content bank (57 types), question bank, quiz, Book, interactive video, Arabic RTL, completion</dd>
+          <dt>Afterwards</dt><dd>Written summary and a gap list for your case</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p><strong>Suraj Thalange</strong>, Moodle developer. Pune, India (IST, UTC+5:30).</p>
+      <p><a href="mailto:surajthalange18@gmail.com">surajthalange18@gmail.com</a> · <a href="https://github.com/surajthalange" rel="me">GitHub</a> · <a href="https://www.linkedin.com/in/developersurajthalange" rel="me">LinkedIn</a></p>
+      <p class="availability"><span class="dot" aria-hidden="true"></span>Taking on new Moodle projects now</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <p class="footer-note">Moodle is a registered trademark of Moodle Pty Ltd. This site is not affiliated with Moodle Pty Ltd. Copyright 2026 Suraj Thalange.</p>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/palette.js" defer></script>
+</body>
+</html>

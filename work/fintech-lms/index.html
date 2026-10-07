@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case study: compliance training LMS for a fintech company | Suraj Thalange</title>
+<meta name="description" content="Anonymised case study: Moodle 5.2 on AWS delivering SCORM-only compliance training for a fintech company, with restricted admin roles, auto-mailers, Excel-spec reporting, a branded theme and a cloned second platform.">
+<meta name="author" content="Suraj Thalange">
+<link rel="canonical" href="https://surajthalange.github.io/work/fintech-lms/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Suraj Thalange">
+<meta property="og:title" content="Case study: compliance training LMS for a fintech company">
+<meta property="og:description" content="Anonymised case study: Moodle 5.2 on AWS delivering SCORM-only compliance training for a fintech company, with restricted admin roles, auto-mailers, Excel-spec reporting, a branded theme and a cloned second platform.">
+<meta property="og:url" content="https://surajthalange.github.io/work/fintech-lms/">
+<meta property="og:image" content="https://surajthalange.github.io/assets/img/og/fintech-lms.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Case study: compliance training LMS for a fintech company, Suraj Thalange">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Case study: compliance training LMS for a fintech company">
+<meta name="twitter:description" content="Anonymised case study: Moodle 5.2 on AWS delivering SCORM-only compliance training for a fintech company, with restricted admin roles, auto-mailers, Excel-spec reporting, a branded theme and a cloned second platform.">
+<meta name="twitter:image" content="https://surajthalange.github.io/assets/img/og/fintech-lms.png">
+<meta name="twitter:image:alt" content="Case study: compliance training LMS for a fintech company, Suraj Thalange">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0F6E73">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0E1417">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>
+// Apply the remembered theme before first paint so there is no flash.
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') { document.documentElement.setAttribute('data-theme', t); }
+  } catch (e) {}
+}());
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://surajthalange.github.io/#person",
+   "name": "Suraj Thalange",
+   "jobTitle": "Technical project manager and Moodle developer",
+   "email": "mailto:surajthalange18@gmail.com",
+   "url": "https://surajthalange.github.io",
+   "image": "https://surajthalange.github.io/assets/img/suraj-480.jpg",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+   },
+   "knowsAbout": [
+    "Moodle",
+    "PHP",
+    "Learning management systems",
+    "PHPUnit",
+    "Behat",
+    "AWS"
+   ],
+   "sameAs": [
+    "https://github.com/surajthalange",
+    "https://www.linkedin.com/in/developersurajthalange"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://surajthalange.github.io/#website",
+   "url": "https://surajthalange.github.io",
+   "name": "Suraj Thalange",
+   "author": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "url": "https://surajthalange.github.io/work/fintech-lms/",
+   "name": "Case study: compliance training LMS for a fintech company",
+   "description": "Anonymised case study: Moodle 5.2 on AWS delivering SCORM-only compliance training for a fintech company, with restricted admin roles, auto-mailers, Excel-spec reporting, a branded theme and a cloned second platform.",
+   "isPartOf": {
+    "@id": "https://surajthalange.github.io/#website"
+   },
+   "about": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body class="">
+<script>document.documentElement.classList.remove("no-js");</script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="avatar avatar-sm" aria-hidden="true"><span class="avatar-initials">ST</span></span>
+      <span class="brand-text"><strong>Suraj Thalange</strong><span>Technical project manager and Moodle developer</span></span>
+    </a>
+    <span class="availability availability-header"><span class="dot" aria-hidden="true"></span>Taking on new projects now</span>
+    <div class="header-actions">
+      <button class="kbd-hint" type="button" data-palette-open aria-haspopup="dialog">Search <kbd>Ctrl</kbd><kbd>K</kbd></button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme" data-theme-toggle>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+<li><a href="/work/" class="is-active" aria-current="page">Work</a></li>
+<li><a href="/delivery/">Delivery</a></li>
+<li><a href="/services/">Services</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-small" href="/contact/">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/work/">Work</a> / Case study</p>
+    <h1>Compliance training LMS for a fintech company</h1>
+    <p class="lede">A Moodle 5.2 platform on AWS that delivers SCORM courses to a regulated workforce, with the admin surface narrowed to what the client's team needs and reporting shaped to the spreadsheet they already use.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap project-layout">
+    <div class="prose">
+      <div class="callout">
+        <p>This engagement is under a confidentiality agreement. The client, its products, logos and data are not shown. The screens on this page are recreated on my demo site with invented content, to show the shape of what was built.</p>
+      </div>
+
+      <h2>The brief</h2>
+      <p>A fintech company needed a learning platform for mandatory training. Their content team produces courses in an authoring tool and exports SCORM packages; they did not want to author inside Moodle. The platform had to look like their brand, keep administrative power in very few hands, tell learners and managers what to do without anyone pressing send, and produce reports in a format their compliance function already used in Excel.</p>
+
+      <h2>Before and after</h2>
+      <p>The biggest change a learner or admin sees is how little is left on screen. Stock Moodle offers everything; this platform offers exactly what a SCORM learner and a small admin team need.</p>
+      
+
+      <h2>What I delivered</h2>
+      <h3>Platform on AWS</h3>
+      <ul>
+        <li>Moodle 5.2 on AWS, with scheduled backups and a documented restore procedure.</li>
+        <li>Separate staging and production environments. Every change was clicked through on staging by the client before it reached production.</li>
+        <li>Outgoing mail configured and rehearsed on staging before any learner received a message.</li>
+      </ul>
+
+      <h3>SCORM-only course delivery</h3>
+      <ul>
+        <li>The course experience was reduced to what a SCORM learner needs: open the course, launch the package, see completion. Activity types the client would never use were removed from the picker.</li>
+        <li>SCORM settings were standardised (attempts, completion rules, display) so that every course behaves the same regardless of who uploaded it.</li>
+        <li>A course template and an upload runbook let the content team publish a new package without a developer.</li>
+      </ul>
+
+      <h3>Restricted admin roles</h3>
+      <ul>
+        <li>Custom roles for content managers, reporting users and support staff, each limited to the capabilities their job needs. Full site administration stays with one nominated account.</li>
+        <li>Role definitions documented capability by capability, with the reason for each grant, so the client's security review could sign them off.</li>
+      </ul>
+
+      <h3>Automated mailers</h3>
+      <ul>
+        <li>Scheduled tasks that send enrolment notices, reminders before a due date, overdue notices and completion confirmations, using the client's copy and branding.</li>
+        <li>Timing and audience are settings rather than code, so a change in policy does not need a developer.</li>
+      </ul>
+
+      <h3>Reporting to an Excel specification</h3>
+      <ul>
+        <li>The client supplied a spreadsheet layout their compliance team files with. I built reports that produce exactly those columns, in that order, with the same labels and date formats, downloadable on demand and generated on a schedule.</li>
+        <li>Report queries were written against Moodle's own APIs and tested against known data so the numbers match what the SCORM packages recorded.</li>
+      </ul>
+
+      
+
+      <h3>Brand guideline and theme</h3>
+      <ul>
+        <li>A Boost child theme implemented from the client's brand guideline: colour, type, logo use, login page and email templates.</li>
+        <li>Nothing in core was edited. The theme survives Moodle upgrades and the client owns it.</li>
+      </ul>
+
+      <h3>A second, cloned platform</h3>
+      <ul>
+        <li>Part-way through, the client needed a second platform for a separate audience with its own branding and its own admin team. I cloned the first platform into a new environment, re-branded it, and separated the data and the roles, with a checklist so a third clone would be routine.</li>
+      </ul>
+
+      <h2>How it ran</h2>
+      <ul>
+        <li>Scope agreed in writing at the start, then delivered in short milestones, each ending with a walkthrough on staging.</li>
+        <li>A delivery notice per milestone listing what changed, what to test and what was still open.</li>
+        <li>An operations runbook, an admin guide for the content team, and a change log handed over at the end.</li>
+      </ul>
+
+      <h2>What this shows</h2>
+      <p>The client got a platform their own team runs day to day, reporting in the format their compliance function already files, and a second platform that reused the first build's documentation instead of starting again. If your organisation has the same shape of problem, mandatory training, a small admin team and a reporting format you cannot change, this is the kind of build I do.</p>
+
+      <div class="btn-row">
+        <a class="btn" href="/contact/">Discuss a similar project</a>
+        <a class="btn btn-secondary" href="/services/">Services</a>
+      </div>
+    </div>
+
+    <aside class="project-aside">
+      <div class="facts">
+        <h3>At a glance</h3>
+        <dl>
+          <dt>Sector</dt><dd>Fintech, regulated training</dd>
+          <dt>Year</dt><dd>2026</dd>
+          <dt>Platform</dt><dd>Moodle 5.2</dd>
+          <dt>Hosting</dt><dd>AWS, staging and production</dd>
+          <dt>Content</dt><dd>SCORM packages only</dd>
+          <dt>Role</dt><dd>Sole developer and technical lead</dd>
+          <dt>References</dt><dd>Client contact available on request</dd>
+        </dl>
+      </div>
+      <div class="facts">
+        <h3>Stack</h3>
+        <ul>
+          <li>Moodle 5.2, PHP 8.4</li>
+          <li>Boost child theme from a brand guideline</li>
+          <li>Custom local plugins for mailers and reports</li>
+          <li>Custom roles and capability review</li>
+          <li>Scheduled tasks, mail provider integration</li>
+          <li>AWS, backups, restore runbook</li>
+        </ul>
+      </div>
+      <div class="facts">
+        <h3>Deliverables</h3>
+        <ul>
+          <li>Two production platforms</li>
+          <li>Operations runbook</li>
+          <li>Content team admin guide</li>
+          <li>Role and capability register</li>
+          <li>Excel-spec reports, scheduled and on demand</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p><strong>Suraj Thalange</strong>, Moodle developer. Pune, India (IST, UTC+5:30).</p>
+      <p><a href="mailto:surajthalange18@gmail.com">surajthalange18@gmail.com</a> · <a href="https://github.com/surajthalange" rel="me">GitHub</a> · <a href="https://www.linkedin.com/in/developersurajthalange" rel="me">LinkedIn</a></p>
+      <p class="availability"><span class="dot" aria-hidden="true"></span>Taking on new Moodle projects now</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <p class="footer-note">Moodle is a registered trademark of Moodle Pty Ltd. This site is not affiliated with Moodle Pty Ltd. Copyright 2026 Suraj Thalange.</p>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/palette.js" defer></script>
+</body>
+</html>

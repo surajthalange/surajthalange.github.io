@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>report_transcript: a verifiable learner transcript for Moodle | Suraj Thalange</title>
+<meta name="description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.1, resubmitted after answering the Marketplace review. 61 PHPUnit tests, 5 Behat scenarios, 16 CI jobs.">
+<meta name="author" content="Suraj Thalange">
+<link rel="canonical" href="https://surajthalange.github.io/work/report-transcript/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Suraj Thalange">
+<meta property="og:title" content="report_transcript: a verifiable learner transcript for Moodle">
+<meta property="og:description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.1, resubmitted after answering the Marketplace review. 61 PHPUnit tests, 5 Behat scenarios, 16 CI jobs.">
+<meta property="og:url" content="https://surajthalange.github.io/work/report-transcript/">
+<meta property="og:image" content="https://surajthalange.github.io/assets/img/og/report-transcript.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="report_transcript: a verifiable learner transcript for Moodle, Suraj Thalange">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="report_transcript: a verifiable learner transcript for Moodle">
+<meta name="twitter:description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.1, resubmitted after answering the Marketplace review. 61 PHPUnit tests, 5 Behat scenarios, 16 CI jobs.">
+<meta name="twitter:image" content="https://surajthalange.github.io/assets/img/og/report-transcript.png">
+<meta name="twitter:image:alt" content="report_transcript: a verifiable learner transcript for Moodle, Suraj Thalange">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0F6E73">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0E1417">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>
+// Apply the remembered theme before first paint so there is no flash.
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') { document.documentElement.setAttribute('data-theme', t); }
+  } catch (e) {}
+}());
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://surajthalange.github.io/#person",
+   "name": "Suraj Thalange",
+   "jobTitle": "Technical project manager and Moodle developer",
+   "email": "mailto:surajthalange18@gmail.com",
+   "url": "https://surajthalange.github.io",
+   "image": "https://surajthalange.github.io/assets/img/suraj-480.jpg",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+   },
+   "knowsAbout": [
+    "Moodle",
+    "PHP",
+    "Learning management systems",
+    "PHPUnit",
+    "Behat",
+    "AWS"
+   ],
+   "sameAs": [
+    "https://github.com/surajthalange",
+    "https://www.linkedin.com/in/developersurajthalange"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://surajthalange.github.io/#website",
+   "url": "https://surajthalange.github.io",
+   "name": "Suraj Thalange",
+   "author": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "url": "https://surajthalange.github.io/work/report-transcript/",
+   "name": "report_transcript: a verifiable learner transcript for Moodle",
+   "description": "Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.1, resubmitted after answering the Marketplace review. 61 PHPUnit tests, 5 Behat scenarios, 16 CI jobs.",
+   "isPartOf": {
+    "@id": "https://surajthalange.github.io/#website"
+   },
+   "about": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "report_transcript",
+   "alternateName": "Transcript",
+   "description": "A Moodle report plugin that gives every learner an academic transcript as a page, a branded PDF with a verification code, and a public verification page.",
+   "codeRepository": "https://github.com/surajthalange/moodle-report_transcript",
+   "programmingLanguage": "PHP",
+   "runtimePlatform": "Moodle 4.5 to 5.2",
+   "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+   "author": {
+    "@id": "https://surajthalange.github.io/#person"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body class="">
+<script>document.documentElement.classList.remove("no-js");</script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="avatar avatar-sm" aria-hidden="true"><span class="avatar-initials">ST</span></span>
+      <span class="brand-text"><strong>Suraj Thalange</strong><span>Technical project manager and Moodle developer</span></span>
+    </a>
+    <span class="availability availability-header"><span class="dot" aria-hidden="true"></span>Taking on new projects now</span>
+    <div class="header-actions">
+      <button class="kbd-hint" type="button" data-palette-open aria-haspopup="dialog">Search <kbd>Ctrl</kbd><kbd>K</kbd></button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme" data-theme-toggle>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+<li><a href="/work/" class="is-active" aria-current="page">Work</a></li>
+<li><a href="/delivery/">Delivery</a></li>
+<li><a href="/services/">Services</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-small" href="/contact/">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+
+<section class="page-head">
+  <div class="wrap page-head-grid">
+    <div>
+      <p class="breadcrumb"><a href="/work/">Work</a> / Report plugin</p>
+      <h1>report_transcript: Transcript</h1>
+      <p class="lede">A report plugin that gives every learner an academic transcript across all their courses, as a page, as a branded PDF with a verification code, and as a public verification page. In the Moodle Marketplace review queue.</p>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap project-layout">
+    <div class="prose">
+      <h2>The problem</h2>
+      <p>Learners lose their record when a course closes. Moodle's grade overview shows a learner one row per course while they are enrolled; Report builder gives administrators rows and CSV. Neither gives a learner a document they can hand to an employer, and neither survives the course being archived or deleted. The requirement came from moodle.org threads asking for exactly this, and a Marketplace search for "transcript" returned only video transcription plugins.</p>
+
+      <h2>What it does</h2>
+      <ul>
+        <li>A learner opens <strong>Transcript</strong> from their profile and sees one table: course, started, completed, grade, outcome.</li>
+        <li><strong>Download PDF</strong> produces an A4 document with the institution's name and logo, the learner's name, the rows, and a 24-character verification code. Every download issues a fresh code and freezes a snapshot of the rows as they stood.</li>
+        <li>Anyone holding a code can open the verification page, enter it, and see exactly what was issued: name, date and rows. The snapshot does not change when a course is later renamed, archived or deleted.</li>
+        <li>Managers can open and download any learner's transcript from that learner's profile.</li>
+      </ul>
+
+      
+
+      <div class="table-wrap"><table>
+        <tr><th></th><th>Grade overview (core)</th><th>Report builder (core)</th><th>Transcript</th></tr>
+        <tr><td>Audience</td><td>The learner</td><td>Administrators</td><td>The learner, and managers</td></tr>
+        <tr><td>Shape</td><td>One row per course, grade only</td><td>Rows, any columns, CSV</td><td>One document per person</td></tr>
+        <tr><td>Dates and outcome</td><td>No</td><td>Dates only</td><td>Yes</td></tr>
+        <tr><td>Download</td><td>No</td><td>CSV</td><td>PDF, branded</td></tr>
+        <tr><td>Verifiable by a third party</td><td>No</td><td>No</td><td>Yes, by code</td></tr>
+        <tr><td>Survives course deletion</td><td>No</td><td>No</td><td>The issued snapshot does</td></tr>
+      </table></div>
+
+      <h2>Rules that are easy to get wrong</h2>
+      <ul>
+        <li><strong>Which courses appear.</strong> Every completion record, whether or not the course is still visible or the learner is still enrolled: the completion record is the evidence. Courses in progress and courses without completion tracking are settings. The front page, excluded categories and courses where the learner's only roles are not graded roles (the gradebook's own rule) never appear, so a teacher's courses do not show on their transcript.</li>
+        <li><strong>Grades.</strong> The grade follows each course's own display type, and hidden grades stay hidden. Every branch of that logic has a unit test.</li>
+        <li><strong>Not a bulk export.</strong> Administrators wanting rows for many users already have Report builder, and the README gives the two-line recipe rather than duplicating core.</li>
+      </ul>
+
+      <h2>How it is built</h2>
+      <ul>
+        <li>Separate, tested classes for the grade presenter, the transcript builder (inclusion and exclusion rules), the issuer (codes and snapshots) and the PDF renderer, each written tests first.</li>
+        <li>One table for issued snapshots, so a transcript is a live view until the moment it is issued and a record from then on.</li>
+        <li>Privacy provider covering the issued snapshots, capability checks for own, manager and verification access, language strings throughout.</li>
+      </ul>
+
+      <h2>Quality</h2>
+      <ul class="badges">
+        <li><span class="badge"><span>PHPUnit</span><span>61 tests</span></span></li>
+        <li><span class="badge"><span>Behat</span><span>5 scenarios</span></span></li>
+        <li><span class="badge"><span>CI</span><span>16 jobs passing</span></span></li>
+        <li><span class="badge"><span>Moodle</span><span>4.5 to 5.2</span></span></li>
+        <li><span class="badge"><span>PHP</span><span>8.1 to 8.4</span></span></li>
+        <li><span class="badge"><span>DB</span><span>PostgreSQL, MariaDB</span></span></li>
+        <li><span class="badge is-pending"><span>Marketplace</span><span>Review round one answered</span></span></li>
+      </ul>
+      <p>GitHub Actions runs the Moodle plugin CI suite on Moodle 4.5, 5.0, 5.1 and 5.2, on the PHP versions each branch supports, on both databases. PHPUnit covers every inclusion rule, every grade display branch including hidden grades, issuing and verification. Behat covers the learner viewing their own transcript, a learner without the capability being refused, the manager path and the verification page.</p>
+
+      <h2>What the review found</h2>
+      <p>Version 1.0.0 went into the Moodle Marketplace review queue on 14 September. On 2 October the reviewer returned two findings, and one of them was an approval blocker on security grounds. The finding was correct, and it is worth writing down rather than quietly fixing.</p>
+      <p>The transcript resolved a course total and printed it on the page, embedded it in the PDF and made it checkable on the public verification page. What it never asked was whether the course showed grades to learners at all. A teacher who had switched the gradebook off before releasing results still had that total published, and verifiable by anyone holding the code, on a page that needs no login. The second finding was smaller: courses without completion tracking came from an enrolment call that does not filter hidden courses, so a hidden course could be listed with its total while the in-progress rule already excluded one.</p>
+      <p>Both were fixed the same day in 1.0.1. The fix applies both halves of the test core makes in its own overview report, the course setting and the capability, and asks them of the learner rather than of whoever is reading the transcript, because the question a transcript has to answer is what the learner could see. Three tests cover the cases the reviewer named: a course with grades switched off, a learner whose capability was removed, and a hidden untracked course. The README claimed the transcript never reveals more than the learner’s own gradebook; that claim is now true.</p>
+
+      <h2>Status</h2>
+      <p>Version 1.0.1 is resubmitted and back with the reviewer (ticket MMR-244). Both GitHub issues are closed against the commits that fixed them, and the full suite of 61 tests passes on all 16 CI jobs. I will link the listing here when it is published.</p>
+
+      <div class="btn-row">
+        <a class="btn" href="https://github.com/surajthalange/moodle-report_transcript">Source on GitHub</a>
+        <a class="btn btn-secondary" href="/work/mod-onelife/">See mod_onelife</a>
+      </div>
+    </div>
+
+    <aside class="project-aside">
+      <div class="facts">
+        <h3>At a glance</h3>
+        <dl>
+          <dt>Type</dt><dd>Report plugin</dd>
+          <dt>Version</dt><dd>1.0.1</dd>
+          <dt>Requires</dt><dd>Moodle 4.5 LTS or later</dd>
+          <dt>Licence</dt><dd>GPL v3 or later</dd>
+          <dt>Review</dt><dd>Round one answered; 1.0.1 resubmitted (MMR-244)</dd>
+          <dt>Source</dt><dd><a href="https://github.com/surajthalange/moodle-report_transcript">github.com/surajthalange/moodle-report_transcript</a></dd>
+        </dl>
+      </div>
+      <div class="facts">
+        <h3>Stack</h3>
+        <ul>
+          <li>PHP 8.1 to 8.4</li>
+          <li>Completion and gradebook APIs</li>
+          <li>PDF generation with the site's branding</li>
+          <li>XMLDB table for issued snapshots</li>
+          <li>Privacy API, capabilities</li>
+          <li>PHPUnit, Behat, Moodle plugin CI</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p><strong>Suraj Thalange</strong>, Moodle developer. Pune, India (IST, UTC+5:30).</p>
+      <p><a href="mailto:surajthalange18@gmail.com">surajthalange18@gmail.com</a> · <a href="https://github.com/surajthalange" rel="me">GitHub</a> · <a href="https://www.linkedin.com/in/developersurajthalange" rel="me">LinkedIn</a></p>
+      <p class="availability"><span class="dot" aria-hidden="true"></span>Taking on new Moodle projects now</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <p class="footer-note">Moodle is a registered trademark of Moodle Pty Ltd. This site is not affiliated with Moodle Pty Ltd. Copyright 2026 Suraj Thalange.</p>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/palette.js" defer></script>
+</body>
+</html>
