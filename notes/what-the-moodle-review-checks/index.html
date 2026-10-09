@@ -144,7 +144,7 @@
   <div class="wrap">
     <p class="breadcrumb"><a href="/notes/">Notes</a> / Process</p>
     <h1>What the Moodle Marketplace review actually checks</h1>
-    <p class="lede">I have put three plugins through it in the last month: one published, one sent back with a security blocker, one still in the queue. Here are the real timelines and the real findings, because almost nothing is written down about this and I wanted it to exist before I needed it.</p>
+    <p class="lede">I have put three plugins through it in the last month: one published, one sent back with a security blocker and since passed, one still in the queue. Here are the real timelines and the real findings, because almost nothing is written down about this and I wanted it to exist before I needed it.</p>
     <p class="muted small">8 October 2026</p>
   </div>
 </section>
@@ -157,10 +157,11 @@
       <tr><th>Plugin</th><th>Submitted</th><th>Reviewer opened it</th><th>Verdict</th><th>Waited</th></tr>
       <tr><td>mod_onelife</td><td>6 Sep</td><td>16 Sep, 22:03</td><td>22:05, approved</td><td><strong>10 days</strong></td></tr>
       <tr><td>report_transcript</td><td>14 Sep</td><td>2 Oct, 21:46</td><td>22:05, changes needed</td><td><strong>18 days</strong></td></tr>
-      <tr><td>theme_atrium</td><td>1 Oct</td><td>still queued</td><td>&mdash;</td><td><strong>7 days and counting</strong></td></tr>
+      <tr><td>report_transcript 1.0.1</td><td>3 Oct</td><td>8 Oct, 21:12</td><td>21:13, passed</td><td><strong>5 days</strong></td></tr>
+      <tr><td>theme_atrium</td><td>1 Oct</td><td>still queued</td><td>&mdash;</td><td><strong>8 days and counting</strong></td></tr>
     </table></div>
 
-    <p>Look at the third and fourth columns. The reviewer opened One Life at 22:03 and approved it at <strong>22:05</strong>. They opened Transcript at 21:46 and returned two findings at <strong>22:05</strong>, nineteen minutes later.</p>
+    <p>Look at the third and fourth columns. The reviewer opened One Life at 22:03 and approved it at <strong>22:05</strong>. They opened Transcript at 21:46 and returned two findings at <strong>22:05</strong>, nineteen minutes later. The resubmission is starker still: opened at 21:12 and passed at <strong>21:13</strong>. One minute.</p>
 
     <p>That is the single most useful thing I learned. <strong>The wait is the queue, not the review.</strong> Nobody is labouring over your code for three weeks. It sits untouched, then somebody picks it up and reaches a decision inside half an hour. Moodle quotes two to four weeks and that is honest, but it is nearly all queue.</p>
 
@@ -200,7 +201,7 @@
     <p>Run the full <code>moodle-plugin-ci</code> matrix locally before submitting, not just in CI, so the feedback loop is minutes. Install <code>moodlehq/moodle-cs</code> and run the coding standard against a copy with LF line endings, because on Windows every file reports a line-ending error and drowns the real findings.</p>
     <p>Then, before submitting, write down every place the plugin shows a user some data, and for each one ask what setting or capability controls whether they should see it. That one question would have caught my blocker. It took a stranger nineteen minutes to find what I had missed over weeks, because they asked it and I had not.</p>
 
-    <p class="muted small">Timelines are from the Jira notification emails on MMR-208, MMR-244 and MMR-347. The reviewer on Transcript was right, and the fix shipped the same day as v1.0.1.</p>
+    <p class="muted small">Timelines are from the Jira notification emails on MMR-208, MMR-244 and MMR-347. The reviewer on Transcript was right, the fix shipped the same day as v1.0.1, and v1.0.1 passed review on 8 October.</p>
 
     <div class="btn-row">
       <a class="btn" href="/work/report-transcript/">The plugin in question</a>

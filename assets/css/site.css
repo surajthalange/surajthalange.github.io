@@ -299,6 +299,19 @@ p.availability { display: flex; }
 /* Home hero byline: a face and a name before the proposition, so the landing page reads as
    a person rather than a product. The avatar is an x-shot, so until the photo file exists the
    build emits no img at all; the ring is hidden rather than left as an empty circle. */
+/* Services index: six cards that answer "do you do my thing" in one glance, each jumping
+   to the section that answers "and what exactly do I get". The detail below is the part
+   that wins the work; this is only the way in. */
+.svc-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: var(--s-5); }
+/* Six services: three across gives two even rows rather than a ragged four-plus-two. */
+@media (min-width: 900px) { .svc-grid { grid-template-columns: repeat(3, 1fr); } }
+.svc-card { display: grid; gap: 6px; padding: 18px 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); text-decoration: none; color: var(--text); transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s; }
+.svc-card:hover, .svc-card:focus-visible { border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); text-decoration: none; color: var(--text); }
+.svc-icon { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; background: var(--accent-soft); color: var(--accent); }
+.svc-icon svg { width: 19px; height: 19px; }
+.svc-name { font-weight: 600; color: var(--accent); }
+.svc-text { color: var(--muted); font-size: var(--step--1); }
+
 .hero-byline { display: flex; align-items: center; gap: 14px; margin-bottom: var(--s-3); }
 .hero-byline .avatar { width: 56px; height: 56px; border-style: solid; border-color: var(--line); }
 .hero-byline .avatar:not(:has(img)) { display: none; }
