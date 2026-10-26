@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>report_transcript: a verifiable learner transcript for Moodle | Suraj Thalange</title>
-<meta name="description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.1 is published in the Moodle plugins directory. 61 PHPUnit tests, 5 Behat scenarios, 16 CI jobs.">
+<meta name="description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.2 is published in the Moodle plugins directory and supports Moodle 5.3. 61 PHPUnit tests, 5 Behat scenarios, 20 CI jobs.">
 <meta name="author" content="Suraj Thalange">
 <link rel="canonical" href="https://surajthalange.github.io/work/report-transcript/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Suraj Thalange">
 <meta property="og:title" content="report_transcript: a verifiable learner transcript for Moodle">
-<meta property="og:description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.1 is published in the Moodle plugins directory. 61 PHPUnit tests, 5 Behat scenarios, 16 CI jobs.">
+<meta property="og:description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.2 is published in the Moodle plugins directory and supports Moodle 5.3. 61 PHPUnit tests, 5 Behat scenarios, 20 CI jobs.">
 <meta property="og:url" content="https://surajthalange.github.io/work/report-transcript/">
 <meta property="og:image" content="https://surajthalange.github.io/assets/img/og/report-transcript.png">
 <meta property="og:image:width" content="1200">
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="report_transcript: a verifiable learner transcript for Moodle">
-<meta name="twitter:description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.1 is published in the Moodle plugins directory. 61 PHPUnit tests, 5 Behat scenarios, 16 CI jobs.">
+<meta name="twitter:description" content="Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.2 is published in the Moodle plugins directory and supports Moodle 5.3. 61 PHPUnit tests, 5 Behat scenarios, 20 CI jobs.">
 <meta name="twitter:image" content="https://surajthalange.github.io/assets/img/og/report-transcript.png">
 <meta name="twitter:image:alt" content="report_transcript: a verifiable learner transcript for Moodle, Suraj Thalange">
 <meta name="color-scheme" content="light dark">
@@ -82,7 +82,7 @@
    "@type": "WebPage",
    "url": "https://surajthalange.github.io/work/report-transcript/",
    "name": "report_transcript: a verifiable learner transcript for Moodle",
-   "description": "Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.1 is published in the Moodle plugins directory. 61 PHPUnit tests, 5 Behat scenarios, 16 CI jobs.",
+   "description": "Transcript is a Moodle report plugin that gives every learner one document across all their courses: dates, final grade, pass or fail outcome, a branded PDF and a verification code. Version 1.0.2 is published in the Moodle plugins directory and supports Moodle 5.3. 61 PHPUnit tests, 5 Behat scenarios, 20 CI jobs.",
    "isPartOf": {
     "@id": "https://surajthalange.github.io/#website"
    },
@@ -97,7 +97,7 @@
    "description": "A Moodle report plugin that gives every learner an academic transcript as a page, a branded PDF with a verification code, and a public verification page.",
    "codeRepository": "https://github.com/surajthalange/moodle-report_transcript",
    "programmingLanguage": "PHP",
-   "runtimePlatform": "Moodle 4.5 to 5.2",
+   "runtimePlatform": "Moodle 4.5 to 5.3",
    "license": "https://www.gnu.org/licenses/gpl-3.0.html",
    "author": {
     "@id": "https://surajthalange.github.io/#person"
@@ -204,13 +204,13 @@
       <ul class="badges">
         <li><span class="badge"><span>PHPUnit</span><span>61 tests</span></span></li>
         <li><span class="badge"><span>Behat</span><span>5 scenarios</span></span></li>
-        <li><span class="badge"><span>CI</span><span>16 jobs passing</span></span></li>
-        <li><span class="badge"><span>Moodle</span><span>4.5 to 5.2</span></span></li>
+        <li><span class="badge"><span>CI</span><span>20 jobs passing</span></span></li>
+        <li><span class="badge"><span>Moodle</span><span>4.5 to 5.3</span></span></li>
         <li><span class="badge"><span>PHP</span><span>8.1 to 8.4</span></span></li>
         <li><span class="badge"><span>DB</span><span>PostgreSQL, MariaDB</span></span></li>
         <li><span class="badge"><span>Marketplace</span><span>Published, plugin 4184</span></span></li>
       </ul>
-      <p>GitHub Actions runs the Moodle plugin CI suite on Moodle 4.5, 5.0, 5.1 and 5.2, on the PHP versions each branch supports, on both databases. PHPUnit covers every inclusion rule, every grade display branch including hidden grades, issuing and verification. Behat covers the learner viewing their own transcript, a learner without the capability being refused, the manager path and the verification page.</p>
+      <p>GitHub Actions runs the Moodle plugin CI suite on Moodle 4.5, 5.0, 5.1, 5.2 and 5.3, on the PHP versions each branch supports, on both databases, twenty jobs in all. PHPUnit covers every inclusion rule, every grade display branch including hidden grades, issuing and verification. Behat covers the learner viewing their own transcript, a learner without the capability being refused, the manager path and the verification page.</p>
 
       <h2>What the review found</h2>
       <p>Version 1.0.0 went into the Moodle Marketplace review queue on 14 September. On 2 October the reviewer returned two findings, and one of them was an approval blocker on security grounds. The finding was correct, and it is worth writing down rather than quietly fixing.</p>
@@ -218,7 +218,7 @@
       <p>Both were fixed the same day in 1.0.1. The fix applies both halves of the test core makes in its own overview report, the course setting and the capability, and asks them of the learner rather than of whoever is reading the transcript, because the question a transcript has to answer is what the learner could see. Three tests cover the cases the reviewer named: a course with grades switched off, a learner whose capability was removed, and a hidden untracked course. The README claimed the transcript never reveals more than the learner’s own gradebook; that claim is now true.</p>
 
       <h2>Status</h2>
-      <p>The reviewer passed version 1.0.1 on 8 October 2026, confirming every critical issue fixed and recommending the plugin for approval (ticket MMR-244). Both GitHub issues are closed against the commits that fixed them, and the full suite of 61 tests passes on all 16 CI jobs. It is now <a href="https://marketplace.moodle.com/plugins/4184">published in the plugins directory</a>.</p>
+      <p>The reviewer passed version 1.0.1 on 8 October 2026, confirming every critical issue fixed and recommending the plugin for approval (ticket MMR-244). Both GitHub issues are closed against the commits that fixed them, and the full suite of 61 tests passes on all 20 CI jobs. It is now <a href="https://marketplace.moodle.com/plugins/4184">published in the plugins directory</a>.</p>
 
       <div class="btn-row">
         <a class="btn" href="https://github.com/surajthalange/moodle-report_transcript">Source on GitHub</a>
@@ -231,7 +231,7 @@
         <h3>At a glance</h3>
         <dl>
           <dt>Type</dt><dd>Report plugin</dd>
-          <dt>Version</dt><dd>1.0.1</dd>
+          <dt>Version</dt><dd>1.0.2, stable</dd>
           <dt>Requires</dt><dd>Moodle 4.5 LTS or later</dd>
           <dt>Licence</dt><dd>GPL v3 or later</dd>
           <dt>Marketplace</dt><dd><a href="https://marketplace.moodle.com/plugins/4184">Published in the plugins directory</a></dd>

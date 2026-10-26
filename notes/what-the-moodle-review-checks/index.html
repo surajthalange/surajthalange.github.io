@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>What the Moodle Marketplace review actually checks | Suraj Thalange</title>
-<meta name="description" content="Three plugin submissions, the real timelines, and the two findings that came back. The queue takes weeks; the review takes twenty minutes. What the automated checks catch, what a human catches that no linter can, and the security finding worth writing down.">
+<meta name="description" content="Three plugins, five submissions, the real timelines, and the findings that came back. The queue takes weeks; the review takes minutes. What the automated checks catch, what a human catches that no linter can, and the two security blockers that turned out to be the same mistake.">
 <meta name="author" content="Suraj Thalange">
 <link rel="canonical" href="https://surajthalange.github.io/notes/what-the-moodle-review-checks/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Suraj Thalange">
 <meta property="og:title" content="What the Moodle Marketplace review actually checks">
-<meta property="og:description" content="Three plugin submissions, the real timelines, and the two findings that came back. The queue takes weeks; the review takes twenty minutes. What the automated checks catch, what a human catches that no linter can, and the security finding worth writing down.">
+<meta property="og:description" content="Three plugins, five submissions, the real timelines, and the findings that came back. The queue takes weeks; the review takes minutes. What the automated checks catch, what a human catches that no linter can, and the two security blockers that turned out to be the same mistake.">
 <meta property="og:url" content="https://surajthalange.github.io/notes/what-the-moodle-review-checks/">
 <meta property="og:image" content="https://surajthalange.github.io/assets/img/og/home.png">
 <meta property="og:image:width" content="1200">
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="What the Moodle Marketplace review actually checks">
-<meta name="twitter:description" content="Three plugin submissions, the real timelines, and the two findings that came back. The queue takes weeks; the review takes twenty minutes. What the automated checks catch, what a human catches that no linter can, and the security finding worth writing down.">
+<meta name="twitter:description" content="Three plugins, five submissions, the real timelines, and the findings that came back. The queue takes weeks; the review takes minutes. What the automated checks catch, what a human catches that no linter can, and the two security blockers that turned out to be the same mistake.">
 <meta name="twitter:image" content="https://surajthalange.github.io/assets/img/og/home.png">
 <meta name="twitter:image:alt" content="What the Moodle Marketplace review actually checks, Suraj Thalange">
 <meta name="color-scheme" content="light dark">
@@ -82,7 +82,7 @@
    "@type": "WebPage",
    "url": "https://surajthalange.github.io/notes/what-the-moodle-review-checks/",
    "name": "What the Moodle Marketplace review actually checks",
-   "description": "Three plugin submissions, the real timelines, and the two findings that came back. The queue takes weeks; the review takes twenty minutes. What the automated checks catch, what a human catches that no linter can, and the security finding worth writing down.",
+   "description": "Three plugins, five submissions, the real timelines, and the findings that came back. The queue takes weeks; the review takes minutes. What the automated checks catch, what a human catches that no linter can, and the two security blockers that turned out to be the same mistake.",
    "isPartOf": {
     "@id": "https://surajthalange.github.io/#website"
    },
@@ -144,8 +144,8 @@
   <div class="wrap">
     <p class="breadcrumb"><a href="/notes/">Notes</a> / Process</p>
     <h1>What the Moodle Marketplace review actually checks</h1>
-    <p class="lede">I have put three plugins through it in the last month: one published, one sent back with a security blocker and since passed, one still in the queue. Here are the real timelines and the real findings, because almost nothing is written down about this and I wanted it to exist before I needed it.</p>
-    <p class="muted small">8 October 2026</p>
+    <p class="lede">I have put three plugins through it, across five submissions. All three are now published, and two came back with a security blocker first. Here are the real timelines and the real findings, because almost nothing is written down about this and I wanted it to exist before I needed it.</p>
+    <p class="muted small">8 October 2026 &middot; updated 19 October 2026, when the third plugin was published</p>
   </div>
 </section>
 
@@ -158,10 +158,13 @@
       <tr><td>mod_onelife</td><td>6 Sep</td><td>16 Sep, 22:03</td><td>22:05, approved</td><td><strong>10 days</strong></td></tr>
       <tr><td>report_transcript</td><td>14 Sep</td><td>2 Oct, 21:46</td><td>22:05, changes needed</td><td><strong>18 days</strong></td></tr>
       <tr><td>report_transcript 1.0.1</td><td>3 Oct</td><td>8 Oct, 21:12</td><td>21:13, passed</td><td><strong>5 days</strong></td></tr>
-      <tr><td>theme_atrium</td><td>1 Oct</td><td>still queued</td><td>&mdash;</td><td><strong>10 days and counting</strong></td></tr>
+      <tr><td>theme_atrium</td><td>1 Oct</td><td>14 Oct, 21:16</td><td>21:31, changes needed</td><td><strong>13 days</strong></td></tr>
+      <tr><td>theme_atrium 1.4.0</td><td>15 Oct</td><td>18 Oct, 21:47</td><td>21:47, passed</td><td><strong>3 days</strong></td></tr>
     </table></div>
 
-    <p>Look at the third and fourth columns. The reviewer opened One Life at 22:03 and approved it at <strong>22:05</strong>. They opened Transcript at 21:46 and returned two findings at <strong>22:05</strong>, nineteen minutes later. The resubmission is starker still: opened at 21:12 and passed at <strong>21:13</strong>. One minute.</p>
+    <p>Look at the third and fourth columns. The reviewer opened One Life at 22:03 and approved it at <strong>22:05</strong>. They opened Transcript at 21:46 and returned two findings at <strong>22:05</strong>, nineteen minutes later. Atrium waited thirteen days and was judged in <strong>fifteen minutes</strong>. The resubmissions are starker still: Transcript opened at 21:12 and passed at <strong>21:13</strong>, and Atrium passed inside the same minute it was opened.</p>
+
+    <p>Five submissions, and the longest any of them spent under a reviewer’s eye was nineteen minutes. The shortest wait to get there was three days and the longest was eighteen.</p>
 
     <p>That is the single most useful thing I learned. <strong>The wait is the queue, not the review.</strong> Nobody is labouring over your code for three weeks. It sits untouched, then somebody picks it up and reaches a decision inside half an hour. Moodle quotes two to four weeks and that is honest, but it is nearly all queue.</p>
 
@@ -189,22 +192,35 @@
 
     <p>The fix was small once named: apply both halves of the check core makes in its own overview report, the course setting and the capability, and ask them of the learner rather than of whoever is reading the document. Three tests now cover it. The README had claimed the transcript never reveals more than the learner's own gradebook; the claim is true now and it was not before.</p>
 
+    <h2>Then it happened again</h2>
+
+    <p>Two weeks later the theme came back with six findings, one of them an approval blocker, and it was the same mistake wearing different clothes.</p>
+
+    <p>Atrium has a Ctrl+K palette that searches courses, pages and the activities in the course you are looking at. The course id comes from the browser, and the palette filtered each activity on <code>uservisible</code> &mdash; Moodle&rsquo;s own test for whether a user can see an activity. That felt like the right check. It is the right check for an activity.</p>
+
+    <p>It is not a check on the course. <code>uservisible</code> asks whether the activity is visible, whether it is available, and whether the user holds its <code>mod/&lt;name&gt;:view</code> capability. Enrolment, guest access and course visibility are no part of it. Several module types define no view capability at all, and others grant it to every authenticated user. So anyone signed in could put a different course id on the request and read back the names, types and links of activities in a course they could not open &mdash; including a hidden one.</p>
+
+    <p>Put the two blockers side by side and they are one sentence: <strong>I resolved data and showed it without asking whether that user was allowed to see it.</strong> Once in a gradebook total, once in a list of activity names. Different plugin, different subsystem, same question unasked. Neither was caught by a linter, and neither was caught by my tests, because my tests encoded the same assumption my code did.</p>
+
+    <p>That is the part worth taking away. It is not a rule you can add to CI. It is a question you have to remember to ask, and the only reliable way I have found is to make a list of every place a plugin shows a user some data and go through it one row at a time.</p>
+
     <h2>The shape of what they look for</h2>
-    <p>From two reviews and the published guidelines, the findings cluster into three kinds:</p>
+    <p>From five submissions and the published guidelines, the findings cluster into three kinds:</p>
     <ul>
-      <li><strong>Mechanical.</strong> A missing language string, a capability not declared, a privacy provider that does not match the schema. The automated checks get most of these; my other finding was a cache definition declared in <code>db/caches.php</code> with no matching <code>cachedef_</code> string.</li>
+      <li><strong>Mechanical.</strong> A missing language string, a capability not declared, a privacy provider that does not match the schema. The automated checks get most of these; this one came up twice, in both plugins, as cache definitions declared in <code>db/caches.php</code> with no matching <code>cachedef_</code> string. The theme also had to declare its bundled typefaces in <code>thirdpartylibs.xml</code> and name Google Analytics in its privacy provider.</li>
       <li><strong>Platform convention.</strong> Doing a thing your own way when core already has a way. The reviewer pointed at <code>grade_report_overview::setup_courses_data()</code> and said: core already answers this question, match it.</li>
-      <li><strong>Data visibility.</strong> Showing a user something they could not otherwise see. This is where the blockers are, and it is worth auditing your own plugin against it before you submit, because it is the category a linter cannot reach.</li>
+      <li><strong>Data visibility.</strong> Showing a user something they could not otherwise see. Both of my blockers were here, and so is every blocker I would now expect. It is the category a linter cannot reach, so it is the one to audit yourself before you submit.</li>
     </ul>
 
     <h2>What I would do differently</h2>
     <p>Run the full <code>moodle-plugin-ci</code> matrix locally before submitting, not just in CI, so the feedback loop is minutes. Install <code>moodlehq/moodle-cs</code> and run the coding standard against a copy with LF line endings, because on Windows every file reports a line-ending error and drowns the real findings.</p>
     <p>Then, before submitting, write down every place the plugin shows a user some data, and for each one ask what setting or capability controls whether they should see it. That one question would have caught my blocker. It took a stranger nineteen minutes to find what I had missed over weeks, because they asked it and I had not.</p>
 
-    <p class="muted small">Timelines are from the Jira notification emails on MMR-208, MMR-244 and MMR-347. The reviewer on Transcript was right, the fix shipped the same day as v1.0.1, and v1.0.1 passed review on 8 October.</p>
+    <p class="muted small">Timelines are from the Jira notification emails on MMR-208, MMR-244 and MMR-347. Both reviewers were right. Transcript&rsquo;s fix shipped the same day as v1.0.1 and passed on 8 October; Atrium&rsquo;s six findings were fixed in a day, shipped as v1.4.0 with Moodle 5.3 support folded in, and passed on 18 October. All three plugins are published.</p>
 
     <div class="btn-row">
-      <a class="btn" href="/work/report-transcript/">The plugin in question</a>
+      <a class="btn" href="/work/report-transcript/">The transcript plugin</a>
+      <a class="btn btn-secondary" href="/work/theme-atrium/">The theme</a>
       <a class="btn btn-secondary" href="/notes/">More notes</a>
     </div>
   </div>
