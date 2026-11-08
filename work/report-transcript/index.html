@@ -170,6 +170,74 @@
         <li>Managers can open and download any learner's transcript from that learner's profile.</li>
       </ul>
 
+      <figure class="diagram">
+        <svg viewBox="0 0 1120 290" role="img" aria-labelledby="flow-title flow-desc"
+             font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif">
+          <title id="flow-title">How a transcript is issued and checked</title>
+          <desc id="flow-desc">A learner's completed courses are read live from Moodle and shown on their
+            transcript page. Downloading the PDF issues a verification code and freezes a snapshot of the
+            rows. Anyone holding the code can check that snapshot on a public page without logging in. The
+            snapshot is what survives the course being deleted.</desc>
+
+          <g fill="none" stroke="#B9C6C7" stroke-width="1.5">
+            <path d="M258 85 H282" marker-end="url(#arrow)"/>
+            <path d="M548 85 H572" marker-end="url(#arrow)"/>
+            <path d="M838 85 H862" marker-end="url(#arrow)"/>
+          </g>
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0 0 L10 5 L0 10 z" fill="#B9C6C7"/>
+            </marker>
+          </defs>
+
+          <g>
+            <rect x="8" y="28" width="242" height="114" rx="12" fill="#FFFFFF" stroke="#D9E1E1"/>
+            <text x="28" y="62" font-size="17" font-weight="600" fill="#172022">Completed courses</text>
+            <text x="28" y="90" font-size="14" fill="#55646A">Read live from Moodle,</text>
+            <text x="28" y="110" font-size="14" fill="#55646A">every course with a</text>
+            <text x="28" y="130" font-size="14" fill="#55646A">completion record.</text>
+          </g>
+
+          <g>
+            <rect x="290" y="28" width="250" height="114" rx="12" fill="#FFFFFF" stroke="#D9E1E1"/>
+            <text x="310" y="62" font-size="17" font-weight="600" fill="#172022">Transcript page</text>
+            <text x="310" y="90" font-size="14" fill="#55646A">Course, dates, grade</text>
+            <text x="310" y="110" font-size="14" fill="#55646A">and outcome. The learner</text>
+            <text x="310" y="130" font-size="14" fill="#55646A">sees their own.</text>
+          </g>
+
+          <g>
+            <rect x="580" y="28" width="250" height="114" rx="12" fill="#0F6E73" stroke="#0A5357"/>
+            <text x="600" y="62" font-size="17" font-weight="600" fill="#FFFFFF">PDF, and a code</text>
+            <text x="600" y="90" font-size="14" fill="#D7EAEA">Each download issues a</text>
+            <text x="600" y="110" font-size="14" fill="#D7EAEA">fresh code and freezes a</text>
+            <text x="600" y="130" font-size="14" fill="#D7EAEA">snapshot of the rows.</text>
+          </g>
+
+          <g>
+            <rect x="870" y="28" width="242" height="114" rx="12" fill="#FFFFFF" stroke="#D9E1E1"/>
+            <text x="890" y="62" font-size="17" font-weight="600" fill="#172022">Anyone can check</text>
+            <text x="890" y="90" font-size="14" fill="#55646A">They enter the code on</text>
+            <text x="890" y="110" font-size="14" fill="#55646A">a public page. No account,</text>
+            <text x="890" y="130" font-size="14" fill="#55646A">no login.</text>
+          </g>
+
+          <g fill="none" stroke="#0F6E73" stroke-width="1.5" stroke-dasharray="5 5">
+            <path d="M705 142 V196 H991 V142"/>
+          </g>
+          <text x="848" y="226" font-size="14.5" fill="#0F6E73" text-anchor="middle">
+            The snapshot is what the code resolves to
+          </text>
+          <text x="848" y="248" font-size="14.5" fill="#0F6E73" text-anchor="middle">
+            and what survives the course being deleted.
+          </text>
+
+          <text x="129" y="226" font-size="14.5" fill="#55646A" text-anchor="middle">Live data. A deleted</text>
+          <text x="129" y="248" font-size="14.5" fill="#55646A" text-anchor="middle">course leaves this view.</text>
+        </svg>
+        <figcaption>The live page reflects Moodle today. The issued document reflects the day it was issued, and keeps doing so.</figcaption>
+      </figure>
+
       <div class="gallery gallery-3">
         <figure><a href="/assets/img/transcript/learner-page.png"><img src="/assets/img/transcript/learner-page.png" alt="Transcript page from the learner's profile" width="1600" height="1000" loading="lazy" decoding="async"></a><figcaption>The page</figcaption></figure>
         <figure><a href="/assets/img/transcript/pdf.png"><img src="/assets/img/transcript/pdf.png" alt="The A4 PDF open in a viewer: institution logo, learner name, rows, verification code" width="1600" height="1000" loading="lazy" decoding="async"></a><figcaption>The branded PDF</figcaption></figure>
