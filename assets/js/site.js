@@ -5,15 +5,14 @@
     var root = document.documentElement;
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // Theme: follows the OS until the visitor chooses; the choice is remembered.
+    // Theme: light for everyone until the visitor chooses dark; the choice is remembered.
+    // The operating system preference is deliberately not consulted. A visitor who keeps
+    // their machine in dark mode still gets the light site first, which is the intended
+    // first impression, and one press of the toggle switches them over for good.
     var toggle = document.querySelector('[data-theme-toggle]');
-    var osDark = window.matchMedia('(prefers-color-scheme: dark)');
     function currentTheme() {
         var set = root.getAttribute('data-theme');
-        if (set === 'light' || set === 'dark') {
-            return set;
-        }
-        return osDark.matches ? 'dark' : 'light';
+        return set === 'dark' ? 'dark' : 'light';
     }
     function labelToggle() {
         if (toggle) {
@@ -32,7 +31,6 @@
             }
             labelToggle();
         });
-        osDark.addEventListener('change', labelToggle);
         labelToggle();
     }
 

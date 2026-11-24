@@ -87,35 +87,13 @@
   color-scheme: light;
 }
 
-/* Dark palette: cool slate base with three surface levels, teal kept as an accent */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0E1417;
-    --bg-alt: #121A1E;
-    --surface: #182126;
-    --surface-2: #1F2A30;
-    --line: #2A373D;
-    --line-strong: #3B4B52;
-    --text: #E7EDEF;
-    --muted: #A5B4B9;
-    --accent: #62C6CB;
-    --accent-strong: #8AD9DC;
-    --accent-soft: #143236;
-    --accent-ink: #BFE8EA;
-    --on-accent: #06272A;
-    --amber: #F2B860;
-    --amber-soft: #3A2A12;
-    --green: #6CCB8A;
-    --hero-from: #143236;
-    --cta-bg: #143236;
-    --cta-text: #E7EDEF;
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.35);
-    --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.4), 0 24px 60px rgba(0, 0, 0, 0.5);
-    --ph-stripe: rgba(98, 198, 203, 0.08);
-    color-scheme: dark;
-  }
-}
+/*
+ * Dark palette: cool slate base with three surface levels, teal kept as an accent.
+ *
+ * Applied only when the visitor has chosen it, never from prefers-color-scheme. Light is
+ * the default for everyone, including a visitor whose operating system is set to dark;
+ * they get light until they press the toggle in the header, and then it is remembered.
+ */
 :root[data-theme="dark"] {
   --bg: #0E1417;
   --bg-alt: #121A1E;
@@ -235,10 +213,6 @@ p.availability { display: flex; }
 .theme-toggle .icon-moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: none; }
-  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: block; }
-}
 .nav-toggle { display: none; position: relative; }
 .nav-toggle-bar, .nav-toggle-bar::before, .nav-toggle-bar::after { content: ""; position: absolute; left: 10px; width: 20px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.2s; }
 .nav-toggle-bar { top: 19px; }
@@ -414,7 +388,6 @@ p.availability { display: flex; }
 .cta-band .btn-secondary { background: transparent; color: var(--cta-text); border-color: color-mix(in srgb, var(--cta-text) 60%, transparent); }
 .cta-band .btn-secondary:hover { background: color-mix(in srgb, var(--cta-text) 12%, transparent); color: var(--cta-text); }
 :root[data-theme="dark"] .cta-band .btn { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cta-band .btn { background: var(--accent); color: var(--on-accent); border-color: var(--accent); } }
 
 /* ---------- Full-bleed quote ---------- */
 .quote-band { background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--section) 0; }
