@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://surajthalange.github.io/about/</loc></url>
+  <url><loc>https://surajthalange.github.io/care-plan/</loc></url>
   <url><loc>https://surajthalange.github.io/contact/</loc></url>
   <url><loc>https://surajthalange.github.io/delivery/</loc></url>
+  <url><loc>https://surajthalange.github.io/health-check/</loc></url>
   <url><loc>https://surajthalange.github.io/</loc></url>
+  <url><loc>https://surajthalange.github.io/lts-upgrade/</loc></url>
   <url><loc>https://surajthalange.github.io/notes/</loc></url>
   <url><loc>https://surajthalange.github.io/notes/what-a-moodle-theme-costs/</loc></url>
   <url><loc>https://surajthalange.github.io/notes/what-the-moodle-review-checks/</loc></url>
